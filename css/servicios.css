@@ -1,0 +1,74 @@
+/* ======== ESTILOS PARA SERVICIOS ======== */
+#servicios {
+    background-color: #fff;
+}
+
+#servicios h2 {
+    font-size: 2.3rem;
+    margin-bottom: 15px;
+    color: #2a4d69;
+}
+
+#servicios p {
+    color: #444;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Tarjetas de servicios */
+.card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+/* Imagen de tarjeta */
+.card img {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Hover de tarjeta */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Título de servicio */
+.card-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #1f3a52;
+}
+
+/* Texto dentro de tarjetas */
+.card-text {
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.5;
+}
+
+/* ======== RESPONSIVE ======== */
+
+/* Ajuste para móvil */
+@media (max-width: 768px) {
+    #servicios h2 {
+        font-size: 1.9rem;
+    }
+
+    .card img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card img {
+        height: 170px;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+}

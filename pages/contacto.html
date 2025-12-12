@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Friends</title>
+    <link rel="icon" href="../img/icon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="myicono"><span class="material-symbols-outlined">menu</span></div>
+        <ul class="lista-sm">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="acerdade.html">Acerca de</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-menu"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 8l16 0" /><path d="M4 16l16 0" /></svg> -->
+    </nav>
+    <div id="content">
+        <section id="info">
+            <h1>Contáctanos</h1>
+                <p>
+                    ¿Quieres agendar una cita, solicitar un servicio o simplemente resolver una duda?
+                    En <strong>Dog Friends</strong> estamos siempre disponibles para ayudarte.
+                </p>
+
+                <h2>Información de Contacto</h2>
+                <ul>
+                    <li><strong>📞 Teléfono:</strong> 55 1234 5678</li>
+                    <li><strong>📧 Correo:</strong> contacto@dogfriends.com</li>
+                    <li><strong>📍 Dirección:</strong> Av. Mascotas 123, Col. Peludos, Ciudad Canina</li>
+                    <li><strong>🕒 Horarios:</strong> Lunes a Sábado de 9:00 AM a 7:00 PM</li>
+                </ul>
+                <p>
+                    También puedes llenar el siguiente formulario y nos pondremos en contacto contigo lo antes posible.
+                </p>
+
+        </section>
+        <section id="principal">        
+            <h2>Formulario de registro</h2>
+            <form id="formContacto" action="procesar.php" method="post">
+                <label for="nombre">Nombre completo:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="correo">Correo electrónico:</label><br>
+                <input type="email" id="correo" name="correo" required><br><br>
+
+                <label for="telefono">Número de teléfono:</label><br>
+                <input type="tel" id="telefono" name="telefono"><br><br>
+
+                <label for="perro">Nombre de tu perro:</label><br>
+                <input type="text" id="perro" name="perro"><br><br>
+
+                <label for="raza">Raza del perro:</label><br>
+                <input type="text" id="raza" name="raza"><br><br>
+
+                <label for="servicio">Servicio que deseas:</label><br>
+                <select id="servicio" name="servicio">
+                    <option>Baño y limpieza</option>
+                    <option>Corte de pelo</option>
+                    <option>Corte de uñas</option>
+                    <option>Limpieza dental</option>
+                    <option>Paseo</option>
+                    <option>Spa</option>
+                    <option>Entrenamiento</option>
+                    <option>Otro</option>
+                </select><br><br>
+
+                <label for="mensaje">Mensaje o comentarios:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="5" cols="40"></textarea><br><br>
+
+                <button type="submit">Enviar solicitud</button>
+            </form>
+        </section>
+        <p class="note">
+        Gracias por confiar en Dog Friends. Nos encantará cuidar y consentir a tu mejor amigo. 🐶💙
+        </p>
+
+            <!-- <form action="">
+                <div>Nombre:<input type="text" name="nombre"></div>
+                <div>Email: <input type="email" name="email"></div>
+                <div><button type="submit">Eviar mensaje</button></div>
+            </form> -->
+            
+        <div id="contac">
+                <p >
+                    👉 Regresar.
+                </p>
+                <a href="../index.html" class="btn">Regresar al inicio</a>
+            </div>
+        <footer>
+            <p aria="center">Copyright (c) 2025 </p>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../script/script.js"></script>
+</body>
+</html>

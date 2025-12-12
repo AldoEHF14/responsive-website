@@ -1,0 +1,179 @@
+/* =======================
+   CONTENEDOR GENERAL
+======================= */
+
+#content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* =======================
+   SECCIÓN INFO
+======================= */
+
+#info {
+    background: #ffffff;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+
+#info h1 {
+    font-size: 2.4rem;
+    color: #1e88e5;
+    margin-bottom: 10px;
+}
+
+#info h2 {
+    color: #1e88e5;
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+
+#info ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#info ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+#info strong {
+    color: #0d47a1;
+}
+
+/* =======================
+   FORMULARIO
+======================= */
+
+#principal {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+#principal h2 {
+    color: #1e88e5;
+    margin-bottom: 15px;
+}
+
+form label {
+    font-weight: bold;
+    color: #333;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #bbb;
+    margin-top: 5px;
+    margin-bottom: 18px;
+    font-size: 1rem;
+    transition: border-color 0.2s ease-in;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border-color: #1e88e5;
+    outline: none;
+}
+
+form button {
+    background: #1e88e5;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+form button:hover {
+    background: #1565c0;
+}
+
+/* =======================
+   "Agradecimiento"
+======================= */
+
+.note {
+    clear:both;
+}
+
+
+/* =======================
+   "REGRESAR"
+======================= */
+
+#contac {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#contac .btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #1e88e5;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: background 0.2s ease;
+}
+
+#contac .btn:hover {
+    background: #0c57a3;
+}
+
+/* =======================
+   FOOTER
+======================= */
+
+footer {
+    background: #1e88e5;
+    padding: 12px;
+    border-radius: 12px;
+    margin-top: 30px;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+
+/* =======================
+   RESPONSIVE
+======================= */
+
+@media (max-width: 768px) {
+    #info, #principal {
+        padding: 20px;
+    }
+
+    form input, form select, form textarea {
+        font-size: 0.95rem;
+    }
+
+    #info h1 {
+        font-size: 2rem;
+    }
+
+    #info ul li {
+        font-size: 1rem;
+    }
+}
+
